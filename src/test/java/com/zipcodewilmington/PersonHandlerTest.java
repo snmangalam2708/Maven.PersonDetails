@@ -14,16 +14,16 @@ public class PersonHandlerTest {
     @Before
     public void setup() {
         // : Given
-        Person person1 = new Person("Leon", "Hunter");
-        Person person2 = new Person("Tariq", "Hook");
+        Person person1 = new Person("Ted", "Mosby");
+        Person person2 = new Person("Barney", "Stinson");
         Person person3 = new Person("Dolio", "Durant");
         Person[] personArray = {person1, person2, person3};
 
         this.personHandler = new PersonHandler(personArray);
-        this.expected = "\nMy first name is Leon\n" +
-                "My last name is Hunter\n" +
-                "My first name is Tariq\n" +
-                "My last name is Hook\n" +
+        this.expected = "\nMy first name is Ted\n" +
+                "My last name is Mosby\n" +
+                "My first name is Barney\n" +
+                "My last name is Stinson\n" +
                 "My first name is Dolio\n" +
                 "My last name is Durant";
     }
